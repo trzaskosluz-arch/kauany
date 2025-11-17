@@ -1,1 +1,128 @@
+/* Variáveis de cores para fácil manutenção */
+:root {
+    --fundo-verde-claro: #e0ffe0; /* Um verde bem claro */
+    --texto-principal: #333;
+    --detalhe-azul: #3498db; /* Azul vibrante para flores/árvores */
+    --borda-card: #a3d9a3; /* Verde um pouco mais escuro para bordas */
+}
 
+/* Estilos gerais do corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--fundo-verde-claro);
+    color: var(--texto-principal);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: var(--borda-card);
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Estilos para a área principal */
+main {
+    padding: 40px 20px;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilos para o cartão de biografia */
+.bio-card {
+    background-color: white;
+    border: 3px solid var(--borda-card);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+#bio-text {
+    flex-grow: 1;
+    padding: 0 20px;
+    font-size: 1.1em;
+}
+
+/* Estilos para os ícones de natureza (árvores e flores azuis) */
+.card-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 2.5em; /* Aumenta o tamanho do ícone */
+}
+
+.blue-icon {
+    color: var(--detalhe-azul); /* Cor azul para os desenhos de tema natureza */
+}
+
+/* Estilos para a seção de motivação */
+.motivation-area {
+    background-color: #f0fff0; /* Um verde ainda mais claro ou quase branco */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.motivation-area h2 {
+    color: var(--detalhe-azul);
+    margin-top: 0;
+}
+
+/* Estilos para o botão */
+#motivate-button {
+    background-color: var(--detalhe-azul);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.1s;
+    margin-bottom: 20px;
+}
+
+#motivate-button:hover {
+    background-color: #2980b9; /* Um azul um pouco mais escuro ao passar o mouse */
+    transform: translateY(-2px);
+}
+
+#motivate-button:active {
+    transform: translateY(0);
+}
+
+/* Estilos para a citação de motivação */
+#motivation-quote {
+    font-style: italic;
+    font-size: 1.2em;
+    min-height: 40px; /* Garante espaço mesmo sem texto */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: var(--borda-card);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto; /* Empurra o rodapé para baixo */
+}
